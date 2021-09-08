@@ -17,3 +17,5 @@ pipeline {
                 sh 'cd MyWebApp && mvn test'
             }
         }
+    }
+}
