@@ -26,6 +26,12 @@ pipeline {
                }
             }
        }
+        stage ('Quality gate') {
+            
+          steps {
+                 waitforQualityGate abortPipeline: true
+              }
+          }
          stage ('Deploy to tomcat') {
 
             steps {
