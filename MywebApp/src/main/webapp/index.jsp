@@ -4,7 +4,9 @@
 </head>
 <style>
 body { 
-    background-colour:rgb(255,26,140)
+    background-colour: #860111;
+}
+hi {
 	Hello from TechAustin again again!!Thanks guys
 }
 </style>
