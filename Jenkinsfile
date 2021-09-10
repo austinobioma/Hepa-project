@@ -29,7 +29,7 @@ pipeline {
         stage ('Quality gate') {
             
           steps {
-                 waitforQualityGate abortPipeline: true
+                 waitForQualityGate abortPipeline: true
               }
           }
          stage ('Deploy to tomcat') {
