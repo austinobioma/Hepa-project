@@ -7,7 +7,7 @@ body {
     background-colour: #860111;
 }
 hi {
-	Hello from TechAustin again again!!Thanks guys
+	Hello from TechAustin again again!!Thanks guys;
 }
 </style>
 </head>
