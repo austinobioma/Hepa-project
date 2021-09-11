@@ -40,7 +40,7 @@ pipeline {
          
             id: "jfrog"
      
-            url: "http://34.201.119.61:8081/"
+            url: "http://34.201.119.61:8081/artifactory"
 
             credentialsId: "my-jfrog"
             bypassProxy: true
