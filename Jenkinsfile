@@ -32,6 +32,36 @@ pipeline {
                  waitForQualityGate abortPipeline: true
               }
           }
+        stage('Artifactory configuration') {
+
+     steps {
+
+        rtServer (
+         
+            id: "jfrog"
+     
+            url: "http://34.201.119.61:8081/"
+
+            credentialsId: "my-jfrog"
+            bypassProxy: true
+
+            )
+          }
+        }
+         stage('Deploy Artifact') {
+
+       steps {
+         
+          rtUpload (
+
+              ServerId: 'jfrog'
+
+                  )
+
+              }
+
+           }
+
          stage ('Deploy to tomcat') {
 
             steps {
