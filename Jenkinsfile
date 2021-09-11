@@ -26,6 +26,12 @@ pipeline {
                }
             }
        }
+        stage ('Quality gate') {
+            
+          steps {
+                 waitForQualityGate abortPipeline: true
+              }
+          }
         stage('Artifactory configuration') {
 
      steps {
@@ -55,12 +61,6 @@ pipeline {
               }
 
            }
-        stage ('Quality gate') {
-            
-          steps {
-                 waitForQualityGate abortPipeline: true
-              }
-          }
          stage ('Deploy to tomcat') {
 
             steps {
