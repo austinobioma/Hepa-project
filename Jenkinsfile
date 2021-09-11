@@ -48,7 +48,7 @@ pipeline {
          
           rtUpload (
 
-              ServerId: 'jfrog'
+              serverId: 'jfrog'
 
                   )
 
