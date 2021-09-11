@@ -32,11 +32,11 @@ pipeline {
 
         rtServer (
          
-            id: "jfrog"
+            id: "jfrog",
      
-            url: "http://34.201.119.61:8081//artifactory"
+            url: "http://34.201.119.61:8081//artifactory",
 
-            credentialsId: "my-jfrog"
+            credentialsId: "my-jfrog",
             bypassProxy: true
 
             )
