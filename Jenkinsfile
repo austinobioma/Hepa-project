@@ -55,7 +55,6 @@ pipeline {
           rtUpload (
 
               serverId: 'jfrog'
-              tokenid: 432ca8b7-ea6a-4f17-9bf5-ec92bea005e5
 
                   )
 
