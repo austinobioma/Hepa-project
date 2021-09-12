@@ -40,7 +40,7 @@ pipeline {
          
             id: "jfrog",
      
-            url: "http://3.83.236.155:8082/artifactory",
+            url: "http://3.83.236.155:8082/artifactory/jenkins-integration",
 
             credentialsId: "my-jfrog",
             bypassProxy: true
