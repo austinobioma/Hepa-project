@@ -43,7 +43,6 @@ pipeline {
             url: "http://3.83.236.155:8082/artifactory",
 
             credentialsId: "my-jfrog",
-            authentication: false
             bypassProxy: true
 
             )
@@ -56,6 +55,7 @@ pipeline {
           rtUpload (
 
               serverId: 'jfrog'
+              authentication: false
 
                   )
 
