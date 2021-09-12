@@ -38,12 +38,13 @@ pipeline {
 
         rtServer (
          
-            id: "jfrog",
+            id: "my-jfrog",
      
             url: "http://3.83.236.155:8082/artifactory/jenkins-integrations",
 
-            credentialsId: "my-jfrog",
-            bypassProxy: true
+            credentialsId: "baba7fa5-a142-40b1-b368-ead653ab7bc6",
+            bypassProxy: true,
+            timeout: 300
 
             )
           }
@@ -54,7 +55,7 @@ pipeline {
          
           rtUpload (
 
-              serverId: 'jfrog'
+              serverId: 'my-jfrog'
 
                   )
 
